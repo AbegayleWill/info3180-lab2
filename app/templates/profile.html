@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <section class="centercard">
+        <main class="main" >
+            <div id="top" class="centercard" >
+                <div class="top">
+                    <img src=" {{ url_for('static',filename='./images/myProfilePhoto.jpg') }} " alt="ProfilePhoto" >
+                    <h1>Abegayle Williams</h1>
+                    <p>@abegayleWill</p>
+                    <p>St. Andrew, Jamaica</p>
+                    <p>{{date}}</p>
+                </div>
+            </div>
+            
+            <div id="card">
+
+                <div class="card-info">
+                    <div id="bio">
+                        <p>I am Twenty years old and I love animals and nature.
+                           I attended St. Hugh's High School and Currently attend The University of the West Indies.
+                           I enjoy cooking and as a pass time I love watching tv shows. </p>
+                    </div>
+                    <div id="cardsection">
+                        <div class="posts">
+                            <span>7</span>
+                            <p>Posts</p>
+                        </div>
+                        <div class="following">
+                            <span>100</span>
+                            <p>Following</p>
+                        </div>
+                        <div class="followers">
+                            <span>250</span>
+                            <p>Followers</p>
+                        </div>
+                        
+
+                    </div>
+                    <div class="centercard" >
+                        
+                            <div class="button">Follow</div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </section>
+
+{% endblock %}
